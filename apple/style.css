@@ -1,0 +1,65 @@
+@font-face {
+  font-family: apple;
+  src: url(./sf-pro-text_semibold.woff2);
+}
+@font-face {
+  font-family: apple1;
+  src: url(./sf-pro-display_regular.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 50px;
+  width: 100%;
+  background-color: #1c1c1d;
+  color: white;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: apple;
+  font-size: 15px;
+  font-weight: 100;
+}
+#center {
+  height: 80%;
+  width: 100%;
+  color: white;
+  background-image: url(./apple.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: apple1;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50px;
+}
+#center > h3 {
+  font-weight: 100;
+}
+#button button {
+  height: 45px;
+  width: 90px;
+  color: white;
+  background-color: #0077ed;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+}

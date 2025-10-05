@@ -1,0 +1,285 @@
+@font-face {
+  font-family: dot;
+  src: url(./Ndot-55-DoenNkNm.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(./korataki-rg-3cf0d889-B6eTgmP5.ttf);
+}
+@font-face {
+  font-family: no;
+  src: url(./Sansation_Regular-COtNG1MQ.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+#nav {
+  height: 108px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#nav-left {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#nav-right {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 80px;
+  position: relative;
+}
+.frame {
+  height: 100px;
+  width: 307px;
+  position: absolute;
+  top: 15%;
+}
+.logo {
+  height: 100px;
+  width: 215px;
+}
+.frame-search {
+  height: 63px;
+  width: 320px;
+  position: absolute;
+  top: 35%;
+  left: 63%;
+}
+
+.frame-1 {
+  height: 55px;
+  width: 150px;
+  position: absolute;
+  left: 34%;
+  bottom: 20%;
+}
+.frame-2 {
+  height: 55px;
+  width: 150px;
+  position: absolute;
+  left: 57%;
+  bottom: 20%;
+}
+.frame-3 {
+  height: 55px;
+  width: 150px;
+  position: absolute;
+  left: 78%;
+  bottom: 20%;
+}
+.search {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+  position: absolute;
+  top: 38%;
+  left: 70%;
+}
+.search:hover {
+  border: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+#nav-right h2 {
+  color: white;
+  font-size: 16px;
+  font-family: bold;
+}
+
+#nav-left h2 {
+  color: white;
+  font-family: dot;
+  font-weight: 300;
+  font-size: 50px;
+  padding-left: 45px;
+  padding-top: 18px;
+}
+#center {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.line1 {
+  width: 150px;
+  border-top: 3px solid white;
+  rotate: 36deg;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+}
+.line2 {
+  width: 150px;
+  border-top: 3px solid white;
+  /* rotate:180deg; */
+  position: absolute;
+  top: 15%;
+  left: 26.9%;
+}
+.line3 {
+  width: 150px;
+  border-top: 3px solid white;
+  rotate: 36deg;
+  position: absolute;
+  top: 20%;
+  left: 35.8%;
+}
+.line4 {
+  width: 830px;
+  border-top: 3px solid white;
+  /* rotate: 180deg; */
+  position: absolute;
+  top: 25%;
+  left: 44.7%;
+}
+.line5 {
+  width: 230px;
+  border-top: 3px solid white;
+  rotate: 36deg;
+  position: absolute;
+  top: 22.8%;
+  left: 31%;
+}
+.line6 {
+  width: 150px;
+  border-top: 3px solid white;
+  /* rotate:180deg; */
+  position: absolute;
+  top: 30.5%;
+  left: 44.7%;
+}
+.line7 {
+  width: 100px;
+  border-top: 3px solid white;
+  rotate: 36deg;
+  position: absolute;
+  top: 34%;
+  left: 53.9%;
+}
+.line8 {
+  width: 100px;
+  border-top: 3px solid white;
+  /* rotate: 36deg; */
+  position: absolute;
+  top: 37.4%;
+  left: 59.9%;
+}
+.line9 {
+  width: 100px;
+  border-top: 3px solid white;
+  rotate: 144deg;
+  position: absolute;
+  top: 34%;
+  left: 65.9%;
+}
+.line10 {
+  width: 420px;
+  border-top: 3px solid white;
+  /* rotate:180deg; */
+  position: absolute;
+  top: 30.5%;
+  left: 71.9%;
+}
+.line11 {
+  width: 600px;
+  border-top: 3px solid white;
+  /* rotate:180deg; */
+  position: absolute;
+  bottom: 33%;
+  left: 0%;
+}
+.line12 {
+  width: 100px;
+  border-top: 3px solid white;
+  rotate: 144deg;
+  position: absolute;
+  bottom: 36.3%;
+  left: 38.8%;
+}
+.line13 {
+  width: 830px;
+  border-top: 3px solid white;
+  /* rotate:180deg; */
+  position: absolute;
+  bottom: 39.7%;
+  left: 44.7%;
+}
+.word {
+  position: absolute;
+  top: 38%;
+  left: 1.5%;
+  text-align: center;
+}
+.word > h1 {
+  color: #999d9c;
+  font-family: no;
+  font-weight: bold;
+  font-size: 65px;
+}
+.word h2 {
+  color: #c5c6c6;
+  font-family: dot;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-top: 60px;
+}
+#image {
+  height: 592px;
+  width: 281px;
+  position: absolute;
+  z-index: 10;
+  rotate: 325deg;
+  right: 27.4%;
+  top: 14%;
+}
+#image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#image1 {
+  height: 592px;
+  width: 281px;
+  position: absolute;
+  z-index: 10;
+  rotate: 325deg;
+  right: 21.4%;
+  top: 18%;
+}
+#image1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,14 +1,14 @@
 @font-face {
   font-family: dot;
-  src: url(./Ndot-55-DoenNkNm.ttf);
+  src: url(./assets/Ndot-55-DoenNkNm.ttf);
 }
 @font-face {
   font-family: bold;
-  src: url(./korataki-rg-3cf0d889-B6eTgmP5.ttf);
+  src: url(./assets/korataki-rg-3cf0d889-B6eTgmP5.ttf);
 }
 @font-face {
   font-family: no;
-  src: url(./Sansation_Regular-COtNG1MQ.ttf);
+  src: url(./assets/Sansation_Regular-COtNG1MQ.ttf);
 }
 * {
   padding: 0;

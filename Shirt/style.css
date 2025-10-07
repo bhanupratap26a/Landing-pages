@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, lightblue, lightpink);
+}
+#nav {
+  height: 10%;
+  width: 100%;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#left-nav > img {
+  height: 20px;
+  color: white;
+}
+span {
+  color: white;
+}
+
+#mid-nav > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 15px;
+}
+#right-nav > button {
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.logo {
+  height: 20px;
+}
+#center {
+  height: 90%;
+  width: 100%;
+}
+.shirt {
+  /*width: 1184px;
+  */
+  position: absolute;
+  z-index: 3;
+  top: 0%;
+  right: 61%;
+}
+.shirt1 {
+  /*width: 1184px;
+  */
+  position: absolute;
+  z-index: 2;
+  top: 48.8%;
+  left: 50%;
+  transform: translate(-26.2%, -50%);
+  -webkit-transform: translate(-26.2%, -50%);
+  -moz-transform: translate(-26.2%, -50%);
+  -ms-transform: translate(-26.2%, -50%);
+  -o-transform: translate(-26.2%, -50%);
+}
+#big-text {
+  color: white;
+}
+#big-text h2 {
+  font-size: 100px;
+  font-weight: 500;
+  /* letter-spacing: 2px; */
+  word-spacing: 7px;
+}
+.line-1 {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  z-index: 10;
+}
+.line-1>i{
+  color: yellow;
+  font-size: 30px;
+}
+.line-2 {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  z-index: 2;
+}
+.line-2>h2 {
+  line-height: 90px;
+  word-spacing: 10px;
+  letter-spacing: 1.1px;
+}
+.line-3 {
+  position: absolute;
+  z-index: 10;
+  left: 10%;
+  bottom: 21%;
+}
+.line-3 > h2 {
+  letter-spacing: 3px;
+}

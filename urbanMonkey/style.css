@@ -1,0 +1,19 @@
+@font-face {
+  font-family: light;
+  src: url(./assets/LufgaLight.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(./assets/LufgaRegular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,109 @@
+@font-face {
+  font-family: not;
+  src: url(./assets/Sansation_Regular-COtNG1MQ.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+#nav-left {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+#nav-right button {
+  font-size: 16px;
+  height: 40px;
+  width: 70px;
+  font-weight: 300;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#center {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-shrink: no;
+}
+.card-1 {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.car1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.inner1 {
+  height: 30%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  /* color: white; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.card-1:hover .inner1 {
+  top: 70%;
+}
+.inner1 i {
+  font-size: 25px;
+  padding: 5px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.inner1 h2 {
+  color: white;
+  font-weight: 300;
+  font-family: not;
+}

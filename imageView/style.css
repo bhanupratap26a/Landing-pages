@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+
+#section-1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.img-div {
+  height: 100%;
+  flex-grow: 1;
+  transition: flex-grow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.img-div:nth-child(1) {
+  background-image: url(./assets/brazil.avif);
+}
+.img-div:nth-child(2) {
+  background-image: url(./assets/paris.avif);
+}
+.img-div:nth-child(3) {
+  background-image: url(./assets/middle.avif);
+}
+.img-div:nth-child(4) {
+  background-image: url(./assets/Beijing.avif);
+}
+.img-div:nth-child(5) {
+  background-image: url(./assets/russia.avif);
+}
+
+.img-div:hover {
+  flex-grow: 2.5;
+}

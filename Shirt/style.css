@@ -13,7 +13,7 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, lightblue, lightpink);
+  background: linear-gradient(to right, lightblue, rgb(255, 205, 182));
 }
 #nav {
   height: 10%;

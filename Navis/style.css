@@ -1,0 +1,209 @@
+@font-face {
+  font-family: regular;
+  src: url(./assets/regular.woff2);
+}
+@font-face {
+  font-family: light;
+  src: url(./assets/light.woff2);
+}
+@font-face {
+  font-family: medium;
+  src: url(./assets/medium.woff2);
+}
+@font-face {
+  font-family: bold;
+  src: url(./assets/bold.woff2);
+}
+@font-face {
+  font-family: semi-bold;
+  src: url(./assets/semi-bold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#header {
+  height: 10vh;
+  width: 100vw;
+  background-color: white;
+}
+#header nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+}
+#header nav .nav-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#header nav .nav-left h3 {
+  font-family: semi-bold;
+  font-size: 1.5rem;
+}
+#header nav .nav-left img {
+  height: 2rem;
+}
+#header nav .nav-middle {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#header nav .nav-middle h4 {
+  font-family: light;
+  font-size: 16px;
+}
+#header nav .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#header nav .nav-right .nav-btn-1 {
+  font-family: regular;
+  font-size: 16px;
+  border: 2px solid #0061fe;
+  background-color: white;
+  color: #0061fe;
+  border-radius: 16rem;
+  height: 40px;
+  width: 90px;
+  -webkit-border-radius: 16rem;
+  -moz-border-radius: 16rem;
+  -ms-border-radius: 16rem;
+  -o-border-radius: 16rem;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+#header nav .nav-right .nav-btn-2 {
+  font-family: regular;
+  font-size: 16px;
+  border: 2px solid #0061fe;
+  background-color: #0061fe;
+  color: white;
+  border-radius: 16rem;
+  height: 40px;
+  width: 120px;
+  -webkit-border-radius: 16rem;
+  -moz-border-radius: 16rem;
+  -ms-border-radius: 16rem;
+  -o-border-radius: 16rem;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: white;
+}
+#main .hero {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f7f7f9;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  grid-template-rows: 15% 15% 1fr;
+  grid-template-areas: "left right" "left-bottom right-bottom" "bottom bottom";
+}
+#main .hero .left-top {
+  grid-area: left;
+  align-content: end;
+}
+#main .hero h1 {
+  font-family: medium;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 10px 33px;
+}
+#main .hero .hero-right-top {
+  grid-area: right;
+  align-content: end;
+}
+#main .hero .hero-right-top p {
+  font-family: regular;
+  font-weight: 100;
+}
+#main .hero .hero-right-bottom {
+  grid-area: right-bottom;
+  align-self: flex-start;
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+}
+#main .hero .hero-right-bottom .hero-btn-1 {
+  font-family: regular;
+  font-size: 16px;
+  border: 2px solid #0061fe;
+  background-color: #0061fe;
+  color: white;
+  border-radius: 16rem;
+  height: 40px;
+  width: 140px;
+  -webkit-border-radius: 16rem;
+  -moz-border-radius: 16rem;
+  -ms-border-radius: 16rem;
+  -o-border-radius: 16rem;
+}
+#main .hero .hero-right-bottom .hero-btn-2 {
+  font-family: regular;
+  font-size: 16px;
+  border: 2px solid #0061fe;
+  background-color: white;
+  color: #0061fe;
+  border-radius: 16rem;
+  height: 40px;
+  width: 90px;
+  -webkit-border-radius: 16rem;
+  -moz-border-radius: 16rem;
+  -ms-border-radius: 16rem;
+  -o-border-radius: 16rem;
+}
+#main .hero .hero-img {
+  height: 100%;
+  width: 100%;
+  grid-area: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#main .hero .hero-img .img-hero {
+  background-color: lightblue;
+  height: 96%;
+  width: 96%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#main .hero .hero-img .img-hero img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

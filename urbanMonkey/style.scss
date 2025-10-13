@@ -1,0 +1,131 @@
+@import 'display';
+@font-face {
+  font-family: light;
+  src: url(./assets/LufgaLight.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(./assets/LufgaRegular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.8rem;
+}
+#header {
+  height: 10vh;
+  width: 100%;
+  background-color: #111111;
+  color: white;
+
+  nav {
+    @include flexCenter();
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    font-family: light;
+
+    .nav-left {
+    }
+    .nav-mid {
+      height: 4rem;
+      width: 32rem;
+      padding: 1.2rem;
+      background-color: rgb(50, 47, 47);
+      @include flexCenter();
+      gap: 2.5rem;
+      border-radius: 1.7rem;
+      -webkit-border-radius: 1.7rem;
+      -moz-border-radius: 1.7rem;
+      -ms-border-radius: 1.7rem;
+      -o-border-radius: 1.7rem;
+
+      h4 {
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.3s ease;
+      }
+
+      h4:hover {
+        cursor: pointer;
+        border-bottom: 1px solid #cafe3f;
+      }
+    }
+    .nav-right {
+      @include flexCenter();
+      gap: 1rem;
+      i {
+        font-size: 2.4rem;
+      }
+
+      button {
+        height: 4rem;
+        width: 15rem;
+        background-color: #111111;
+        color: white;
+        font-family: light;
+        font-size: 1.5rem;
+        border: 2px solid #cafe3f;
+        border-radius: 1.8rem;
+        -webkit-border-radius: 1.8rem;
+        -moz-border-radius: 1.8rem;
+        -ms-border-radius: 1.8rem;
+        -o-border-radius: 1.8rem;
+      }
+    }
+  }
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+
+  #hero {
+    height: 90vh;
+    width: 100%;
+    background-color: #111111;
+
+    .heading {
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: regular;
+      font-weight: 100;
+      font-size: 3rem;
+      padding-top: 2rem;
+
+      i {
+        color: #cafe3f;
+      }
+    }
+    .hero-bottom {
+      height: 70vh;
+      width: 100%;
+      @include flexCenter();
+
+      .left {
+        height: 100%;
+        width: 20%;
+      }
+      .img {
+        height: 100%;
+        width: 60%;
+        background-image: url(./assets/hero.webp);
+        background-size: cover;
+        background-position: top;
+      }
+      .right {
+        height: 100%;
+        width: 20%;
+      }
+    }
+  }
+}

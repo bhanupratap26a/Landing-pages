@@ -36,18 +36,17 @@ body {
     .nav-left {
     }
     .nav-mid {
-      height: 4rem;
-      width: 32rem;
-      padding: 1.2rem;
+      height: 5rem;
+      width: 33rem;
+      padding: 0rem 1.2rem 0rem 1.8rem;
       background-color: rgb(50, 47, 47);
       @include flexCenter();
       gap: 2.5rem;
-      border-radius: 1.7rem;
-      -webkit-border-radius: 1.7rem;
-      -moz-border-radius: 1.7rem;
-      -ms-border-radius: 1.7rem;
-      -o-border-radius: 1.7rem;
-
+      border-radius: 2.5rem;
+      -webkit-border-radius: 2.5rem;
+      -moz-border-radius: 2.5rem;
+      -ms-border-radius: 2.5rem;
+      -o-border-radius: 2.5rem;
       h4 {
         border-bottom: 1px solid transparent;
         transition: border-color 0.3s ease;
@@ -114,6 +113,25 @@ body {
       .left {
         height: 100%;
         width: 20%;
+        color: white;
+        @include flexCenter(flex-end);
+        flex-direction: column;
+
+        img {
+          height: 28vh;
+          background-color: #d2691e;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        p {
+          padding-top: 0.5rem;
+          padding-left: 1rem;
+          font-family: light;
+          font-size: 1.6rem;
+        }
       }
       .img {
         height: 100%;
@@ -127,5 +145,9 @@ body {
         width: 20%;
       }
     }
+  }
+  #footer {
+    height: 100vh;
+    width: 100%;
   }
 }

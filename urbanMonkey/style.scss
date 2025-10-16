@@ -101,6 +101,14 @@ body {
       font-size: 3rem;
       padding-top: 2rem;
 
+      h1 {
+        font-family: light;
+        font-weight: 100;
+      }
+      span {
+        font-weight: 600;
+      }
+
       i {
         color: #cafe3f;
       }
@@ -114,21 +122,25 @@ body {
         height: 100%;
         width: 20%;
         color: white;
-        @include flexCenter(flex-end);
+        padding: 1rem;
+        @include flexCenter(center);
         flex-direction: column;
 
         img {
-          height: 28vh;
-          background-color: #d2691e;
+          height: 23vh;
+          background-color: #262525d4;
+          border: 2rem solid #111111;
           border-radius: 50%;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
+          // box-shadow: -2rem -2rem 1rem 0rem #cafe3f;
+          box-shadow: -0.1rem -0.1rem 0.1rem 0rem #cafe3f;
         }
         p {
           padding-top: 0.5rem;
-          padding-left: 1rem;
+          padding-left: 2rem;
           font-family: light;
           font-size: 1.6rem;
         }
@@ -139,10 +151,70 @@ body {
         background-image: url(./assets/hero.webp);
         background-size: cover;
         background-position: top;
+
+        img {
+          height: 23rem;
+          position: absolute;
+          top: 18%;
+          left: 18%;
+          rotate: -30deg;
+        }
       }
       .right {
         height: 100%;
         width: 20%;
+        @include flexCenter();
+        flex-direction: column;
+        text-align: center;
+        font-family: regular;
+
+        h2 {
+          font-size: 4.5rem;
+          color: white;
+          font-weight: 200;
+        }
+        i {
+          font-size: 3rem;
+          color: #cafe3f;
+        }
+        p {
+          color: #cafe3f;
+        }
+
+        .top {
+          height: 17vh;
+          width: 60%;
+          @include flexCenter();
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 0.2rem solid #cafe3f;
+        }
+        .middle {
+          height: 17vh;
+          width: 60%;
+          @include flexCenter();
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 0.2rem solid #cafe3f;
+        }
+        .middle-1 {
+          height: 17vh;
+          width: 60%;
+          @include flexCenter();
+          flex-direction: column;
+          justify-content: center;
+        }
+        .bottom {
+          height: 17vh;
+          width: 60%;
+          @include flexCenter();
+          flex-direction: column;
+          justify-content: flex-end;
+
+          img {
+            height: 80%;
+          }
+        }
       }
     }
   }

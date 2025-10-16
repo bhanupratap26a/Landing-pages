@@ -99,6 +99,13 @@ body {
   font-size: 3rem;
   padding-top: 2rem;
 }
+#main #hero .heading h1 {
+  font-family: light;
+  font-weight: 100;
+}
+#main #hero .heading span {
+  font-weight: 600;
+}
 #main #hero .heading i {
   color: #cafe3f;
 }
@@ -112,22 +119,25 @@ body {
   height: 100%;
   width: 20%;
   color: white;
+  padding: 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
 }
 #main #hero .hero-bottom .left img {
-  height: 28vh;
-  background-color: #d2691e;
+  height: 23vh;
+  background-color: rgba(38, 37, 37, 0.831372549);
+  border: 2rem solid #111111;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  box-shadow: -0.1rem -0.1rem 0.1rem 0rem #cafe3f;
 }
 #main #hero .hero-bottom .left p {
   padding-top: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   font-family: light;
   font-size: 1.6rem;
 }
@@ -138,9 +148,70 @@ body {
   background-size: cover;
   background-position: top;
 }
+#main #hero .hero-bottom .img img {
+  height: 23rem;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  rotate: -30deg;
+}
 #main #hero .hero-bottom .right {
   height: 100%;
   width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: regular;
+}
+#main #hero .hero-bottom .right h2 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 200;
+}
+#main #hero .hero-bottom .right i {
+  font-size: 3rem;
+  color: #cafe3f;
+}
+#main #hero .hero-bottom .right p {
+  color: #cafe3f;
+}
+#main #hero .hero-bottom .right .top {
+  height: 17vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 0.2rem solid #cafe3f;
+}
+#main #hero .hero-bottom .right .middle {
+  height: 17vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 0.2rem solid #cafe3f;
+}
+#main #hero .hero-bottom .right .middle-1 {
+  height: 17vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#main #hero .hero-bottom .right .bottom {
+  height: 17vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#main #hero .hero-bottom .right .bottom img {
+  height: 80%;
 }
 #main #footer {
   height: 100vh;

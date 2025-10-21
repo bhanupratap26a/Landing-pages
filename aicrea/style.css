@@ -17,6 +17,7 @@ body {
 
 html {
   font-size: 10px;
+  background-color: white;
 }
 
 header {
@@ -101,6 +102,148 @@ header nav #nav-right button:nth-child(2) i {
 }
 
 main {
+  height: 90vh;
+  width: 100%;
+}
+main #hero {
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.6fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "left right right" "start mid end";
+  grid-gap: 1.5rem;
+  padding: 2rem 2rem 2rem 4rem;
+}
+main #hero .left {
+  grid-area: left;
+}
+main #hero .left img {
+  display: inline;
+  height: 4.5rem;
+  width: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+main #hero .left h1 {
+  display: inline;
+  font-size: 6rem;
+}
+main #hero .left .btn-1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  height: 6rem;
+  width: 23rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+main #hero .left .con {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main #hero .left .btn-2 {
+  font-size: 2rem;
+  height: 4rem;
+  width: 16rem;
+  background-color: #2d323e;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+main #hero .left u {
+  font-size: 2rem;
+}
+main #hero .mid {
+  grid-area: right;
+  background-color: rosybrown;
+}
+main #hero .right {
+  grid-area: right;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-image: url(./assets/bubble.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main #hero .bottom {
+  grid-area: start;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+main #hero .bottom p {
+  font-size: 1.6rem;
+}
+main #hero .bottom .img {
+  height: 10rem;
+  width: 50rem;
+  display: flex;
+  gap: 1rem;
+}
+main #hero .bottom .img .img-1 {
+  height: 100%;
+  width: 30%;
+  background-image: url(./assets/tide.png);
+  background-size: cover;
+  background-position: center;
+}
+main #hero .bottom .img .img-2 {
+  height: 100%;
+  width: 40%;
+  background-image: url(./assets/coin.png);
+  background-size: cover;
+  background-position: center;
+}
+main #hero .bottom .img .img-3 {
+  height: 100%;
+  width: 32%;
+  background-image: url(./assets/etro.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main #hero .bottom .img .img-4 {
+  height: 100%;
+  width: 40%;
+  background-image: url(./assets/chip.png);
+  background-size: cover;
+  background-position: center;
+}
+main #hero .bottom-2 {
+  grid-area: mid;
+  border-radius: 2rem;
+  background-image: url(./assets/deep.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main #hero .bottom-3 {
+  grid-area: end;
+  border-radius: 2rem;
+  background-image: url(./assets/imp.jpg);
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
